@@ -31,7 +31,26 @@ echo -e 'col_text,col_int\napples,3\noranges,5' > sample.csv
  
 GNU C Library (Ubuntu EGLIBC 2.19-0ubuntu6.15+esm2) stable release version 2.19, by Roland McGrath et al.
 ```
+### Python test
 
+```Python
+from pysqlite2 import dbapi2 as sqlite3
+con = sqlite3.connect(":memory:")
+con.enable_load_extension(True)
+con.load_extension("./csv") 
+
+cur = con.cursor()
+cur.execute("CREATE VIRTUAL TABLE temp.t2 USING csv(filename='./addresses.csv', header=YES)")
+
+q="""SELECT * FROM temp.t1"""
+cur = con.cursor()
+cur.execute(q)
+
+rows = cur.fetchall()
+for row in rows:
+    print(row)
+```    
+    
 <h1 align="center">SQLite Source Repository</h1>
 
 This repository contains the complete source code for the 
