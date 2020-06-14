@@ -21,6 +21,12 @@ echo -e 'col_text,col_int\napples,3\noranges,5' > sample.csv
 ./sqlite3 '' '.load ./csv' 'CREATE VIRTUAL TABLE temp.t1 USING csv(filename="sample.csv", header='YES');' 'PRAGMA table_info(t1);' 'SELECT col_int FROM t1;'
 ```
 
+    0|col_text|TEXT|0||0
+    1|col_int|TEXT|0||0
+    apples|3
+    oranges|5
+
+
 <h1 align="center">SQLite Source Repository</h1>
 
 This repository contains the complete source code for the 
