@@ -25,6 +25,9 @@ echo -e 'col_text,col_int\napples,3\noranges,5' > sample.csv
     1|col_int|TEXT|0||0
     apples|3
     oranges|5
+### glibc
+ /lib/x86_64-linux-gnu/libc.so.6
+GNU C Library (Ubuntu EGLIBC 2.19-0ubuntu6.15+esm2) stable release version 2.19, by Roland McGrath et al.
 
 
 <h1 align="center">SQLite Source Repository</h1>
