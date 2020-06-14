@@ -1,3 +1,26 @@
+csv ext build on ubuntu 14 (gclib 2.19)
+
+### sqlite3 Build
+```
+wget https://www.sqlite.org/src/tarball/sqlite.tar.gz
+tar xzf sqlite.tar.gz
+cd sqlite
+./configure
+make
+```
+### csv vtable build
+```
+gcc -g -I. -fPIC -shared ./ext/misc/csv.c -o csv.so
+```
+### sample
+```
+echo -e 'col_text,col_int\napples,3\noranges,5' > sample.csv
+```
+### test
+```
+./sqlite3 '' '.load ./csv' 'CREATE VIRTUAL TABLE temp.t1 USING csv(filename="sample.csv", header='YES');' 'PRAGMA table_info(t1);' 'SELECT col_int FROM t1;'
+```
+
 <h1 align="center">SQLite Source Repository</h1>
 
 This repository contains the complete source code for the 
