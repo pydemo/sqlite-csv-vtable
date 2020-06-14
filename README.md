@@ -1,6 +1,6 @@
 csv ext build on ubuntu 14 (gclib 2.19)
 
-### sqlite3 Build
+### sqlite3 build
 ```
 wget https://www.sqlite.org/src/tarball/sqlite.tar.gz
 tar xzf sqlite.tar.gz
