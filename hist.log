@@ -1,0 +1,171 @@
+    1  mkdir src
+    2  cd src
+    3  wget -O sqlite3.zip https://www.sqlite.org/2019/sqlite-amalgamation-3270200.zip
+    4  ls
+    5  unzip sqlite3.zip
+    6  sudo apt-get install unzip
+    7  unzip sqlite3.zip
+    8  cd sqlite-amalgamation-3270200/
+    9  gcc shell.c sqlite3.c -o sqlite3 -lpthread -ldl
+   10  sudo apt-get install gcc
+   11  gcc shell.c sqlite3.c -o sqlite3 -lpthread -ldl
+   12  ls -al
+   13  ./sqlite3 
+   14  wget -O https://raw.githubusercontent.com/gwenn/sqlite-csv-ext/master/csv.c
+   15  wget  https://raw.githubusercontent.com/gwenn/sqlite-csv-ext/master/csv.c
+   16  ls -ltr
+   17  gcc -g -fPIC -shared csv.c -o csv.so
+   18  wget https://raw.githubusercontent.com/gwenn/sqlite-csv-ext/master/csv.h
+   19  gcc -g -fPIC -shared csv.c -o csv.so
+   20  ls -al
+   21  wget https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv
+   22  wget https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv --no-check-certificate
+   23  ls
+   24  ./sqlite3 
+   25  pwd
+   26  ls /home/ubuntu/src/sqlite-amalgamation-3270200/addresses.csv 
+   27  ls /home/ubuntu/src/sqlite-amalgamation-3270200/addresses.csv  -al
+   28  chmod 777 /home/ubuntu/src/sqlite-amalgamation-3270200/addresses.csv 
+   29  ./sqlite3 
+   30  wget https://raw.githubusercontent.com/gwenn/sqlite-csv-ext/master/test1.csv
+   31  ls -ltr
+   32  cat test1.csv 
+   33  chmod 777 test1.csv 
+   34  ./sqlite3 
+   35  ls
+   36  ./sqlite3 
+   37  cat  addresses.csv 
+   38  ./sqlite3 
+   39  sqlite3
+   40  ls ../sqlite
+   41  ls ../
+   42  cd ..
+   43  git clone https://github.com/pydemo/Python_2718_glibc2.15.git
+   44  sudo apt-get install git
+   45  git clone https://github.com/pydemo/Python_2718_glibc2.15.git
+   46  cd Python_2718_glibc2.15/bin
+   47  ls
+   48  python
+   49  sudo apt remove python
+   50  pytho
+   51  python
+   52  sudo apt remove python
+   53  sudo apt remove python3
+   54  python
+   55  alias python=~/src/Python_2718_glibc2.15/bin/python
+   56  python
+   57  cd ..
+   58  cd sqlite-amalgamation-3270200/
+   59  ls
+   60  alias sqlite=./sqlite3
+   61  alias sqlite3=./sqlite3
+   62  python
+   63  sqlite3
+   64  vi addresses.csv 
+   65  sqlite3
+   66  mv csv.so _csv.so
+   67  ls
+   68  vi csv2.c
+   69  history
+   70  gcc -g -fPIC -shared csv2.c -o csv2.so
+   71  ls -al
+   72  gcc -g -fPIC -shared csv2.c -o csv2.so
+   73  ls sqlite3ext.h
+   74  chmod 777 *
+   75  ls sqlite3ext.h -Al
+   76  gcc -g -fPIC -shared csv2.c -o csv2.so
+   77  vi csv2.c 
+   78  vi csv.c 
+   79  vi csv2.c 
+   80  gcc -g -fPIC -shared csv2.c -o csv2.so
+   81  vi csv.c 
+   82  vi csv2.c 
+   83  gcc -g -fPIC -shared csv2.c -o csv2.so
+   84  vi csv2.c 
+   85  vi csv.c 
+   86  vi csv2.c 
+   87* 
+   88  vi csv2.c 
+   89  gcc -g -fPIC -shared csv2.c -o csv2.so
+   90  ls
+   91  mv csv.c _csv.c
+   92  ls
+   93  mv csv2.c csv.c
+   94  gcc -g -fPIC -shared csv.c -o csv.so
+   95  sudo apt-get install libsqlite3-dev
+   96  gcc -g -fPIC -shared csv.c -o csv.so
+   97  ls -al
+   98  rm sqlite3
+   99  gcc -g -fPIC -shared csv.c -o csv.so
+  100  ls
+  101  history|grep gcc
+  102  gcc shell.c sqlite3.c -o sqlite3 -lpthread -ldl
+  103  ls -al
+  104  rm *.so
+  105  ls -al
+  106  gcc -g -fPIC -shared _csv.c -o _csv.so
+  107  ls -al 
+  108  cd ..
+  109  wget https://www.sqlite.org/src/tarball/sqlite.tar.gz
+  110  ls -ltr
+  111  tar xzf sqlite.tar.gz
+  112  ls
+  113  mkdir bld
+  114  cd bld
+  115  ../sqlite/configure
+  116  ls
+  117  make
+  118  sudo apt install cmake
+  119  make
+  120  sudo apt install tclsh
+  121  make
+  122  cd ..
+  123  cd sqlite
+  124  ls -al
+  125  ls -al sqlite.*
+  126  ls -al sqlite*
+  127  ls ext
+  128  ./configure 
+  129  make
+  130  ls -al
+  131  ./sqlite3 
+  132  ./sqlite3 --version
+  133  ls ext/misc/csv.c
+  134  gcc -g -I. -fPIC -dynamiclib ../sqlite/ext/misc/csv.c -o csv.dylib
+  135  gcc -g -I. -fPIC -dynamiclib ../sqlite/ext/misc/csv.c -o csv.so
+  136  gcc -g -I. -fPIC  ../sqlite/ext/misc/csv.c -o csv.dylib
+  137  gcc -g -I. -fPIC -dynamiclib ./ext/misc/csv.c -o csv.so
+  138  gcc -g -I. -fPIC -dynamiclib ./ext/misc/csv.c -o csv.dylib
+  139  gcc -g -I. -fPIC  ./ext/misc/csv.c -o csv.dylib
+  140  gcc -g -I. -fPIC --dynamiclib ./ext/misc/csv.c -o csv.dylib
+  141  gcc -g -I. -fPIC  ./ext/misc/csv.c -o csv.dylib
+  142  ls ./ext/misc/csv.c
+  143  gcc -g -fPIC -shared ./ext/misc/csv.c -o csv2.so
+  144  history
+  145  gcc -g -I. -fPIC -shared ./ext/misc/csv.c -o csv2.so
+  146  ls
+  147  ls -al 
+  148  ls -ltr
+  149  gcc -g -I. -fPIC -shared ./ext/misc/csv.c -o csv.so
+  150  ls -ltr
+  151  echo -e 'col_text,col_int\napples,3\noranges,5' > sample.csv
+  152  cat sample.csv 
+  153  ./sqlite3 '' '.load csv' 'CREATE VIRTUAL TABLE temp.t1 USING csv(filename="sample.csv");' 'SELECT * FROM t1;'
+  154  ./sqlite3 '' '.load ./csv' 'CREATE VIRTUAL TABLE temp.t1 USING csv(filename="sample.csv");' 'SELECT * FROM t1;'
+  155  ./sqlite3 '' '.load ./csv' 'CREATE VIRTUAL TABLE temp.t1 USING csv(filename="sample.csv");' 'PRAGMA table_info(t1);' 'SELECT * FROM t1;'
+  156  ./sqlite3
+  157  history
+  158  vi ./ext/misc/csv.c
+  159  ./sqlite3 '' '.load ./csv' 'CREATE VIRTUAL TABLE temp.t1 USING csv(filename="sample.csv", header='YES');' 'PRAGMA table_info(t1);' 'SELECT * FROM t1;'
+  160  ./sqlite3 '' '.load ./csv' 'CREATE VIRTUAL TABLE temp.t1 USING csv(filename="sample.csv", header='YES');' 'PRAGMA table_info(t1);' 'SELECT col_int FROM t1;'
+  161  vi test.sh
+  162  pwd
+  163  cd ..
+  164  git clone https://github.com/pydemo/sqlite-csv-vtable.git
+  165  cd sqlite-csv-vtable/
+  166  cp ../sqlite/* . -Rf
+  167  ls -ltr
+  168  git add .
+  169  git commit -am new
+  170  git push
+  171  history>hist.log
